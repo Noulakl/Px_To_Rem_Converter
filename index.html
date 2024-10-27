@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Px to Rem</title>
+</head>
+<body>
+    <header>
+        <label for="default">Root value in pixel:</label>
+        <input type="number" id="defaultPxValue" value="16" min="0">
+    </header>
+    <main>
+        <div class="wrapper">
+            <input type="number" 
+                name="pxValue" 
+                id="pxValueInput"
+                min="0"
+                step="0.1"
+                placeholder="Tap to enter Pixel value">
+            <p id="rem"></p>
+        </div>
+    </main>
+    <footer>
+        By NolaKely
+    </footer>
+    <script src="./index.js" type="module"></script>
+</body>
+</html>
