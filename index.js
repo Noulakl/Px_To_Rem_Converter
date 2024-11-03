@@ -8,6 +8,8 @@ inputValueElement.addEventListener("input",function(){
     const inputValue = document.getElementById("pxValueInput").value
 
     const calculatedRem = inputValue / defaultPxValue
-    remDisplay.textContent = `${calculatedRem.toFixed(3)}rem`
-    navigator.clipboard.writeText(`${remDisplay.textContent}`)
+    setTimeout(()=>{
+        remDisplay.textContent = `${calculatedRem.toFixed(3)}rem`
+        navigator.clipboard.writeText(`${remDisplay.textContent}`)
+    }, 5000)
 })
