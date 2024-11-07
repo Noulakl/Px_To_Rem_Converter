@@ -11,5 +11,5 @@ inputValueElement.addEventListener("input",function(){
     setTimeout(()=>{
         remDisplay.textContent = `${calculatedRem.toFixed(3)}rem`
         navigator.clipboard.writeText(`${remDisplay.textContent}`)
-    }, 5000)
+    }, 500)
 })
